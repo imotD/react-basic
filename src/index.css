@@ -52,4 +52,15 @@
 .Desc .Info {
   letter-spacing: .7px;
   color: #6b6257;
+  margin-bottom: 20px;
+}
+
+.Desc a {
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  width: 100%;
+  height: auto;
+  background-color: tomato;
+  padding: 10px;
 }
