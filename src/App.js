@@ -1,22 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
+  const user = "Tommy Biasa";
+  const userJsx = <strong>Tommy JSX dong</strong>;
+  //JSX JavaScript XML bisa mengabungkan tag html
+
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <br />
+        {user} - {userJsx}
       </header>
     </div>
   );
