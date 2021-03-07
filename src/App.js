@@ -1,6 +1,7 @@
 // import logo from "./logo.svg";
 import "./App.css";
 import ReviewItems from "./Reviews";
+import PropTypes from "prop-types";
 
 function App() {
   //JSX JavaScript XML bisa mengabungkan tag html
@@ -20,9 +21,9 @@ function App() {
 }
 
 function CheckDiscount(props) {
-  const { isDiscount } = props;
+  const { isDiscount, discount } = props;
   if (isDiscount === "yes") {
-    return <p>Diskon 50%</p>;
+    return <p>Diskon {discount}%</p>;
   } else if (isDiscount === "comming") {
     return <p>Comming soon</p>;
   } else {
@@ -48,7 +49,7 @@ function ProductInfo(props) {
       <p className="Category">{category}</p>
       <h1 className="Title">{title}</h1>
       <p className="Price">IDR {price} K</p>
-      <CheckDiscount isDiscount={isDiscount} />
+      <CheckDiscount isDiscount={isDiscount} discount={30} />
       {ListBenefits}
       <p className="Info">
         Create React App doesn’t handle backend logic or databases; it just
@@ -66,5 +67,9 @@ function ProductInfo(props) {
 function addToCart(i) {
   return console.log("tambah Item " + i);
 }
+
+CheckDiscount.propTypes = {
+  discount  : PropTypes.number,
+};
 
 export default App;
