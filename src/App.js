@@ -38,6 +38,8 @@ function ProductImg() {
 
 function ProductInfo(props) {
   const { category, title, price, isDiscount } = props;
+  const benefits = ["Bahan canvas", "sangat ringan", "tampilan casual"];
+  const ListBenefits = benefits.map((itemBenefits) => <li>{itemBenefits}</li>);
 
   return (
     <div className="Desc">
@@ -45,6 +47,7 @@ function ProductInfo(props) {
       <h1 className="Title">{title}</h1>
       <p className="Price">IDR {price} K</p>
       <CheckDiscount isDiscount={isDiscount} />
+      {ListBenefits}
       <p className="Info">
         Create React App doesn’t handle backend logic or databases; it just
         creates a frontend build pipeline, so you can use it with any backend
