@@ -42,7 +42,9 @@ function ProductImg() {
 function ProductInfo(props) {
   const { category, title, price, isDiscount } = props;
   const benefits = ["Bahan canvas", "sangat ringan", "tampilan casual"];
-  const ListBenefits = benefits.map((itemBenefits) => <li>{itemBenefits}</li>);
+  const ListBenefits = benefits.map((itemBenefits) => (
+    <li key={itemBenefits}>{itemBenefits}</li>
+  ));
 
   return (
     <div className="Desc">
@@ -69,7 +71,7 @@ function addToCart(i) {
 }
 
 CheckDiscount.propTypes = {
-  discount  : PropTypes.number,
+  discount: PropTypes.number,
 };
 
 export default App;
