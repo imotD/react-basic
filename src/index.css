@@ -64,3 +64,40 @@
   background-color: tomato;
   padding: 10px;
 }
+
+.Review-box {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 15px 15px;
+}
+
+.Review-box .Item {
+  display: flex;
+  box-shadow: 0 5px 10px 0 gainsboro;
+  width: 350px;
+  border-radius: 10px;
+  margin: 10px 5px;
+  background-color: whitesmoke;
+}
+
+.Review-box img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.Review-box .User {
+  padding: 10px;
+}
+
+.Review-box h2 {
+  margin-bottom: 10px;
+}
+
+.Review-box p {
+  font-weight: 100;
+  margin-top: 5px;
+  color: #949292;
+}
