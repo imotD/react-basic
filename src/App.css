@@ -1,0 +1,47 @@
+.ParentBox {
+  width: 80%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+
+.Foto {
+  width: 50%;
+  height: auto;
+  text-align: center;
+}
+
+.Foto img {
+  width: 500px;
+  height: auto;
+}
+
+.Deskripsi {
+  width: 50%;
+}
+
+.Deskripsi a {
+  padding: 10px;
+  background-color: grey;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.Deskripsi a:hover {
+  background-color: tomato;
+}
+
+.Tag {
+  color: gray;
+  text-transform: uppercase;
+}
+
+.Title {
+  font-weight: bold;
+}
+
+.Info {
+  color: rgb(65, 63, 63);
+}
